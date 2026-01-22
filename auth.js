@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function login() {
   const user = document.getElementById("username").value;
   const pass = document.getElementById("password").value;
@@ -15,7 +15,6 @@ function login() {
     error.innerText = "Username or Password is wrong!";
   }
 }
-=======
 let isLogin = true;
 
 function toggleForm() {
@@ -56,4 +55,3 @@ document.getElementById("loginForm").onsubmit = function (e) {
     window.location.href = "index.html";
 };
 
->>>>>>> be75240399e6cfc350430fbaebc598ceeae88203
