@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,3 +42,34 @@ function login() {
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | Sign Up</title>
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<div class="auth-box">
+    <h2 id="title">Login</h2>
+
+    <input type="text" id="name" placeholder="Full Name" style="display:none;">
+    <input type="text" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="submitForm()">Login</button>
+
+    <p class="switch">
+        Don't have an account?
+        <span onclick="toggleForm()">Sign Up</span>
+    </p>
+
+    <p class="msg" id="msg"></p>
+</div>
+
+<script src="auth.js"></script>
+</body>
+</html>
+>>>>>>> be75240399e6cfc350430fbaebc598ceeae88203
