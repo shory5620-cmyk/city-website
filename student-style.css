@@ -1,0 +1,50 @@
+/* ====== STUDENT PAGE ====== */
+.student-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.student-container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.student-container p {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.student-btn {
+    background: #00bfa6;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.student-btn:hover {
+    transform: translateY(-3px);
+    background: #008c7a;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 2px solid #111;
+    border-radius: 10px;
+    color: #111;
+    font-weight: 700;
+}

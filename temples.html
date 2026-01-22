@@ -1,29 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Temples List</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Temples - City of Asarganj</title>
+  <link rel="stylesheet" href="temples.css">
 </head>
 <body>
 
-<h2 style="text-align:center; margin-top:20px;">🛕 Temples of Asarganj</h2>
+  <div class="temple-header">🛕 Temples of Asarganj</div>
 
-<div class="list">
-    <!-- Temple 1 -->
-    <a href="temple-ram.html" class="card">
-    <img src="images/image1.jpg" alt="Temple Image">
-    <h3>BABA HATHINATH</h3>
-    <H6>ग्राम देवता</H6>
-</a>
-
-
-    <!-- Temple 2 -->
-    <a href="temple-hanuman.html" class="card">
-        <img src="images/hanuman-temple.jpg" alt="Hanuman Temple">
-        <h3>Hanuman Mandir</h3>
-        <p>Near market area</p>
+  <div class="temple-list">
+    <a class="temple-card" href="#">
+      <img src="temple1.jfif" alt="Temple">
+      <div class="temple-content">
+        <h3>Temple Name 1</h3>
+        <p>Temple location details.</p>
+        <span class="temple-btn">View Details</span>
+      </div>
     </a>
-</div>
+
+    <a class="temple-card" href="#">
+      <img src="temple2.jpg" alt="Temple">
+      <div class="temple-content">
+        <h3>Temple Name 2</h3>
+        <p>Temple location details.</p>
+        <span class="temple-btn">View Details</span>
+      </div>
+    </a>
+
+    <!-- Add more temples -->
+  </div>
+
+  <a class="back-btn" href="index.html">⬅ Back to Home</a>
 
 </body>
 </html>
