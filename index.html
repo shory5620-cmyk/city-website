@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>City of Asarganj - Official Website</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Asarganj city information, temples, schools, hospitals, maps, etc.">
-<meta name="keywords" content="Asarganj, city, temples, schools, hospitals, Bihar">
 
+    <meta name="description" content="Asarganj city information, temples, schools, hospitals, maps, etc.">
+    <meta name="keywords" content="Asarganj, city, temples, schools, hospitals, Bihar">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -25,7 +26,7 @@
 
     <div class="shivay">ॐ</div>
 
-    <div class="location" id="location">📍 Detecting...</div>
+    <div class="location">📍 Asarganj, Bihar</div>
 
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
 
@@ -34,19 +35,16 @@
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
-
-        <!-- ✅ ONE LOGIN BUTTON (ONLY HERE) -->
-        <li><a href="#" id="authBtn" class="login-btn">Login</a></li>
-
+    </ul>
 </nav>
 
-<!-- SECOND NAV BAR -->
+<!-- SECOND NAVBAR -->
 <nav class="navset1">
     <div class="logos">Jai Baba Hathinath</div>
 
     <div class="search-box">
         <input type="text" placeholder="Search city info...">
-        <button onclick="showLoading()">🔍</button>
+        <button>🔍</button>
     </div>
 </nav>
 
@@ -79,40 +77,51 @@
 </div>
 
 <!-- CITY ESSENTIALS -->
-  <section class="templates">
-     <h2>City Essentials</h2>
-      <div class="template-grid">
+<section class="templates">
+    <h2>City Essentials</h2>
+
+    <div class="template-grid">
         <a href="temples.html" class="template-btn">🛕 Temples</a>
-<a href="schools.html" class="template-btn">🏫 Schools</a>
-<a href="hospitals.html" class="template-btn">🏥 Hospitals</a>
-<a href="police.html" class="template-btn">🚓 Police</a>
-<a href="transport.html" class="template-btn">🚌 Transport</a>
-<a href="atm.html" class="template-btn">🏧 ATM</a>
-<a href="stores.html" class="template-btn">🛒 Stores</a>
-<a href="petrol.html" class="template-btn">⛽ Petrol Pump</a>
-<a href="banks.html" class="template-btn">🏦 Banks</a>
-<a href="market.html" class="template-btn">🛍️ Market</a>
-
-             </div> 
-            </section>
-            <section class="sections">
- 
- <!-- After user logs in, show Student & Gov buttons -->
-
-<div class="section-container" id="authSections" style="display:none;">
-  <a href="student.html" class="section-btn">🎓 Student</a>
-  <a href="government.html" class="section-btn">🏛️ Government</a>
-</div>
-
+        <a href="schools.html" class="template-btn">🏫 Schools</a>
+        <a href="hospitals.html" class="template-btn">🏥 Hospitals</a>
+        <a href="police.html" class="template-btn">🚓 Police</a>
+        <a href="transport.html" class="template-btn">🚌 Transport</a>
+        <a href="atm.html" class="template-btn">🏧 ATM</a>
+        <a href="stores.html" class="template-btn">🛒 Stores</a>
+        <a href="petrol.html" class="template-btn">⛽ Petrol Pump</a>
+        <a href="banks.html" class="template-btn">🏦 Banks</a>
+        <a href="market.html" class="template-btn">🛍️ Market</a>
+    </div>
 </section>
 
+<!-- STUDENT & GOVERNMENT SECTION -->
+<section class="sections">
+    <h2>Public Services</h2>
 
+    <div class="section-container">
+        <a href="student.html" class="section-btn">🎓 Student Section</a>
+        <a href="government.html" class="section-btn">🏛️ Government Services</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-    © 2026 MyCity Website
+    © 2026 City of Asarganj | All Rights Reserved
 </footer>
 
 </div>
 
-<script src="script.js"></script>
+<!-- BASIC SCRIPT -->
+<script>
+    window.onload = function () {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    };
+
+    function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("show");
+    }
+</script>
+
 </body>
 </html>
