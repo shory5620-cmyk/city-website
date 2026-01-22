@@ -339,6 +339,48 @@ footer {
     background: #0f2027;
     transform: scale(1.05);
 }
+/* =========================
+   STUDENT & GOV BUTTON STYLE
+========================= */
+
+.section-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 2px solid #111;
+
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  font-size: 16px;
+
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.section-btn:hover {
+  background: #111;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.section-btn:active {
+  transform: translateY(0px);
+}
+
+/* Optional: button container */
+.section-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
 
 
 

@@ -1,29 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Login | Sign Up</title>
-<link rel="stylesheet" href="auth.css">
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="auth.css">
 </head>
 <body>
 
 <div class="auth-box">
-    <h2 id="title">Login</h2>
+  <h2>Login</h2>
 
-    <input type="text" id="name" placeholder="Full Name" style="display:none;">
-    <input type="text" id="email" placeholder="Email">
-    <input type="password" id="password" placeholder="Password">
+  <input id="email" type="email" placeholder="Email">
+  <input id="password" type="password" placeholder="Password">
 
-    <button onclick="submitForm()">Login</button>
+  <button onclick="login()">Login</button>
 
-    <p class="switch">
-        Don't have an account?
-        <span onclick="toggleForm()">Sign Up</span>
-    </p>
+  <p id="msg"></p>
 
-    <p class="msg" id="msg"></p>
+  <p>Don't have account? <a href="signup.html">Sign Up</a></p>
 </div>
 
-<script src="auth.js"></script>
+<script>
+function login() {
+  const email = document.getElementById("email").value;
+  const pass = document.getElementById("password").value;
+  const msg = document.getElementById("msg");
+
+  const savedEmail = localStorage.getItem("userEmail");
+  const savedPass = localStorage.getItem("userPass");
+
+  if (email === savedEmail && pass === savedPass) {
+    localStorage.setItem("loggedIn", "true");
+    window.location.href = "index.html";
+  } else {
+    msg.style.color = "red";
+    msg.innerText = "Email or Password wrong";
+  }
+}
+</script>
+
 </body>
 </html>
